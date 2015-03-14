@@ -1,4 +1,4 @@
-# sortdc
+# sortds
 Sorting of a data structure on the heap
 
 This simple program demostrates the use of qsort.
