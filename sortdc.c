@@ -7,7 +7,8 @@ typedef struct {
     int data; // satellite data
 } node;
 
-/* the comparator */
+void release(node **, size_t);
+
 static int compare(const void *p1, const void *p2) {
     const node *n1 = * (const node **) p1;
     const node *n2 = * (const node **) p2;
@@ -36,4 +37,13 @@ void sortdc(size_t size) {
         printf("%d, ", array[i]->data );
     }
     puts("\n");
+    release(array, size);
+}
+
+void release(node **p, size_t size) {
+    int i = 0;
+    for (; i < size; i++) {
+        free(p[i]);
+    }
+    free(p);
 }
