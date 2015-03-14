@@ -1,6 +1,6 @@
 /* 
  * File:   main.c
- * Author: thanasis
+ * Author: athanasios
  *
  * Created on March 1, 2015, 6:07 PM
  */
