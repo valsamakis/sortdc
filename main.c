@@ -11,7 +11,7 @@
 extern void sortdc(size_t);
 
 /*
- * 
+ * test
  */
 int main(void) {
     sortdc(100);
