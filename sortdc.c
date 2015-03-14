@@ -17,7 +17,7 @@ static int compare(const void *p1, const void *p2) {
     return n1->data - n2->data;
 }
 
-void sortdc(size_t size) {
+void sortds(size_t size) {
     node **array = (node **) malloc(size * sizeof (node *));
     
     int i = 0;
