@@ -7,6 +7,7 @@ typedef struct {
     int data; // satellite data
 } node;
 
+/* the comparator */
 static int compare(const void *p1, const void *p2) {
     const node *n1 = * (const node **) p1;
     const node *n2 = * (const node **) p2;
