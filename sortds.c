@@ -17,6 +17,11 @@ static int compare(const void *p1, const void *p2) {
     return n1->data - n2->data;
 }
 
+/* this is the correct comparator if your ds is char *array[] */
+static int comparestr(const void *s1, const void *s2) {
+    return strcmp(* (const char **) s1, * (const char **) s2);
+}
+
 void sortds(size_t size) {
     node **array = (node **) malloc(size * sizeof (node *));
     
